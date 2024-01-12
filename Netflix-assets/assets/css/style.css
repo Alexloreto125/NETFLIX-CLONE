@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap");
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+}
+.montserrat600 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+a {
+  text-decoration: none !important;
+}
+a img {
+  text-decoration: none !important;
+}
+button:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+#gingleBello:hover {
+  cursor: pointer !important;
+}
+
+#searchBar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+
+  background-color: #f0f0f0;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(100%);
+}
+
+#searchBar.show {
+  transform: translateX(0);
+}
+
+.search-container {
+  position: relative;
+  overflow: hidden;
+  width: 100px;
+  transition: width 0.5s;
+}
+
+.search-input,
+.search-button {
+  padding: 10px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.search-input {
+  width: 0;
+  opacity: 0;
+  transition: width 0.5s;
+}
+
+.search-button {
+  background-color: transparent;
+  color: #fff;
+  cursor: pointer;
+
+  transition: background-color 0.5s;
+}
+
+.search-container:hover {
+  width: 200px;
+}
+
+.search-container:hover .search-input {
+  width: 150px;
+  opacity: 1;
+}
+
+.search-container:hover .search-button {
+  background-color: transparent;
+}
+
+.card-zoom:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
